@@ -18,7 +18,6 @@ def lora_time_on_air(sf, bw, pl, cr=1, preamble_len=8, has_crc=True, has_header=
         ) * (cr + 4),
         0,
     )
-
     # Total time on air
     t_preamble = (preamble_len + 4.25) * t_sym
     t_payload = payload_symb_nb * t_sym
