@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 from scipy.signal import firwin, lfilter, freqz
 
 # Parameters
-fs = 8000               # Sampling frequency in Hz
+fs = 10000               # Sampling frequency in Hz
 fc = 1000               # Cutoff frequency in Hz
 numtaps = 51            # Filter length (number of taps)
 duration = 1.0          # Signal duration in seconds
