@@ -39,7 +39,7 @@ duration = 1.0          # Signal duration in seconds
 t = np.linspace(0, duration, int(fs*duration), endpoint=False)
 
 # Generate a test signal: 500 Hz sine wave + white noise
-f_signal = 500          # Signal frequency
+f_signal = 1000          # Signal frequency
 signal_clean = np.sin(2 * np.pi * f_signal * t)
 noise = np.random.normal(0, 0.5, signal_clean.shape)
 signal_noisy = signal_clean + noise
