@@ -62,6 +62,10 @@ print(len(iq_data))
 few_frames =iq_data[17000000:20000000]
 
 preambles=few_frames[621422:621422+8192]
+
+np.save(r"C:\Users\Umons\Documents\Github\Digital Signal Processing\Data\one_pramble.npy", preambles)
+
+
 plt.figure(figsize=(6,4))
 plt.plot(preambles.real, label='I')
 plt.plot(preambles.imag, label='Q')
