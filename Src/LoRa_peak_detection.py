@@ -119,6 +119,8 @@ def lora_synchronize(iq_samples, sf, bw, fs, expected_symbols=10):
 
 preambles=few_frames[621422:621422+8192]
 
+#time domain plot of the detected preamble
+#it clearly show the perfect start of the preamble.. check the plot in Results folder
 plt.figure(figsize=(6,4))
 plt.plot(preambles.real, label='I')
 plt.plot(preambles.imag, label='Q')
