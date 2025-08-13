@@ -3,3 +3,8 @@
 # Our tutorial is based on the following paper:
 # Just type something and push it github
 # so that it appears that you are quite active on github
+
+
+import numpy as np
+from scipy import signal
+import matplotlib.pyplot as plt
